@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+//import Person from './components/person';
+import MainComponent from './components/MainComponent';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+//JSX
+// Functional component
+// function App() {
+//   return (
+//     <div className="App">
+//       <h1>Hello world!</h1>
+//       <Person />
+//     </div>
+//   );
+//   //return React.createElement('div', { className: "App" }, React.createElement('h1', null, 'Hello World!'), <Person />);
+// }
+
+// class component
+// class App extends Component {
+
+// }
+
+//functional component
+
+const App = () => {
+  return <MainComponent />
 }
+
+
 
 export default App;
